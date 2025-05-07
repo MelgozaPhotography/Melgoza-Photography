@@ -154,8 +154,10 @@ a {
 
 /* Facebook icon */
 .icon {
-    width: 18px;
-    height: 18px;
+    width: 1.1em;
+    height: 1.1em;
     vertical-align: middle;
     margin-right: 6px;
+    opacity: 0.9;
 }
+
