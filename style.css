@@ -1,176 +1,43 @@
+/* Ensure the gradient background is applied to the body */
 body {
-font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(135deg, #4b2e1f, #2f1b0f);
-color: #fff;
-margin: 0;
-padding: 40px 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-animation: fadeIn 1.2s ease;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4b2e1f, #2f1b0f);  /* This is your brown gradient */
+    color: #fff;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadeIn 1.2s ease;
 }
 
-@keyframes fadeIn {
-0% {
-opacity: 0;
-transform: translateY(40px) scale(0.96);
-}
-100% {
-opacity: 1;
-transform: translateY(0) scale(1);
-}
-}
-
-.card {
-background: #fff;
-color: #222;
-padding: 2rem;
-border-radius: 1.5rem;
-box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-max-width: 420px;
-width: 100%;
-text-align: center;
-animation: popIn 0.6s ease forwards;
-opacity: 0;
-}
-
-@keyframes popIn {
-to {
-opacity: 1;
-transform: scale(1);
-}
-}
-
+/* Fix the profile photo and logo sizes */
 .logo {
-max-width: 280px;     /\* Increased from 200px */
-width: 100%;
-display: block;
-margin: 0 auto 2rem;  /* More spacing below \*/
+    max-width: 200px;  /* Reset the logo size */
+    width: 100%;
+    display: block;
+    margin: 0 auto 2rem;
 }
 
 .profile-pic {
-width: 150px;
-height: 150px;
-object-fit: cover;
-object-position: center 30%;
-transform: scale(1.12);
-border-radius: 50%;
-margin: 0 auto 1rem;
-display: block;
-border: 4px solid #e3d9ca;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center 30%;
+    transform: scale(1.12);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+    border: 4px solid #e3d9ca;
 }
 
-h1 {
-font-size: 1.8rem;
-margin: 0.3rem 0;
-}
-
-h2 {
-font-size: 1rem;
-color: #777;
-margin: 0.2rem 0 1.2rem;
-}
-
-.bio {
-font-size: 0.95rem;
-color: #444;
-margin-bottom: 1.5rem;
-line-height: 1.5;
-}
-
-.contact p {
-margin: 0.3rem 0;
-font-size: 0.9rem;
-}
-
-a {
-color: #1e88e5;
-text-decoration: none;
-}
-
-.button {
-display: inline-block;
-margin-top: 1.2rem;
-padding: 0.6rem 1.4rem;
-background: #1e88e5;
-color: white;
-border-radius: 0.5rem;
-text-decoration: none;
-font-weight: bold;
-transition: background 0.3s ease;
-}
-
-.button\:hover {
-background: #1667c2;
-}
-
-/\* Mobile responsiveness \*/
-@media (max-width: 480px) {
-.card {
-padding: 1.5rem;
-}
-
-```
-.logo {
-    max-width: 160px;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-}
-
-h1 {
-    font-size: 1.5rem;
-}
-
-.bio {
-    font-size: 0.9rem;
-}
-```
-
-}
-/\* ...existing styles above... \*/
-
-/\* Fade-in animation for individual elements \*/
-.fade {
-opacity: 0;
-transform: translateY(20px);
-animation: fadeInUp 0.8s forwards;
-}
-
-@keyframes fadeInUp {
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
-.delay-4 { animation-delay: 0.8s; }
-.delay-5 { animation-delay: 1.0s; }
-.delay-6 { animation-delay: 1.2s; }
-.delay-7 { animation-delay: 1.4s; }
-.delay-8 { animation-delay: 1.6s; }
-.delay-9 { animation-delay: 1.8s; }
-.delay-10 { animation-delay: 2.0s; }
-
-/\* Facebook icon \*/
-.icon {
-width: 1.1em;
-height: 1.1em;
-vertical-align: middle;
-margin-right: 6px;
-opacity: 0.9;
-}
 /* Additional styles for photo gallery */
 .gallery {
     padding: 2rem 0;
     text-align: center;
     background-color: #f9f9f9;
+    width: 100%;  /* Make sure gallery spans the full width */
 }
 
 .gallery h2 {
@@ -194,19 +61,6 @@ opacity: 0.9;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s forwards;
-}
-
-.fade {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Fade-in delay */
