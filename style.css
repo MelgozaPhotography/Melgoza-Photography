@@ -10,6 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     animation: fadeIn 1.2s ease;
+    flex-direction: column;  /* Ensure vertical stacking */
 }
 
 /* Logo and Profile Picture sizing */
@@ -53,6 +54,7 @@ body {
     padding: 0 1rem;
 }
 
+/* Gallery item styling */
 .gallery-item {
     width: 100%;
     height: 100%;
@@ -108,7 +110,7 @@ body {
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust grid columns */
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust grid columns for better fitting */
         padding: 0 0.5rem; /* Reduce padding */
     }
 
@@ -122,8 +124,12 @@ body {
     }
 }
 
-/* Extra small screen adjustments (for phones in portrait mode) */
+/* Portrait mobile (for screens under 480px) */
 @media (max-width: 480px) {
+    body {
+        padding: 15px 10px; /* Further reduce padding for smaller screens */
+    }
+
     .logo {
         max-width: 120px;  /* Logo even smaller for very small screens */
     }
@@ -141,7 +147,22 @@ body {
         font-size: 0.85rem;  /* Adjust bio font size */
     }
 
+    .gallery h2 {
+        font-size: 1.6rem;  /* Adjust gallery heading size */
+    }
+
     .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adjust columns for smaller screens */
+        grid-template-columns: 1fr; /* Single column layout for portrait mode */
+        padding: 0 0.5rem; /* Reduce padding */
+    }
+
+    .gallery-item {
+        border-radius: 8px; /* Maintain rounded corners */
+        height: auto;  /* Allow images to scale with height */
+    }
+
+    .button {
+        padding: 0.4rem 1rem; /* Adjust button padding for small screens */
+        font-size: 0.8rem; /* Smaller button text */
     }
 }
