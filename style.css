@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-    max-width: 120px;
+    max-width: 160px; /* Increased from 120px */
     margin: 0 auto 1rem;
     display: block;
 }
@@ -29,46 +29,10 @@ body {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    object-position: center top; /* Adjust this if needed */
+    transform: scale(1.1); /* Slight zoom */
     border-radius: 50%;
     margin: 0 auto 1rem;
     display: block;
     border: 4px solid #e3d9ca;
-}
-
-h1 {
-    font-size: 1.8rem;
-    margin: 0.3rem 0;
-}
-
-h2 {
-    font-size: 1rem;
-    color: #777;
-    margin: 0.2rem 0 1rem;
-}
-
-.bio {
-    font-size: 0.95rem;
-    color: #444;
-    margin-bottom: 1.5rem;
-}
-
-.contact p {
-    margin: 0.3rem 0;
-    font-size: 0.9rem;
-}
-
-a {
-    color: #1e88e5;
-    text-decoration: none;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
-    background: #1e88e5;
-    color: white;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
 }
