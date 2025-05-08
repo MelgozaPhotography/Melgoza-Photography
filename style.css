@@ -200,3 +200,20 @@ transform: translateY(0);
   0% { transform: translateY(0); }
   100% { transform: translateY(-30px) scale(1.1); }
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle.delay {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle.delay2 {
+    width: 120px;
+    height: 120px;
+  }
+}
