@@ -12,14 +12,8 @@ body {
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.96);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  0% { opacity: 0; transform: translateY(40px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .card {
@@ -43,10 +37,7 @@ body {
 }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .logo {
@@ -130,10 +121,11 @@ a:hover {
 }
 
 .icon {
-  width: 1.1em;
-  height: 1.1em;
+  width: 18px;
+  height: 18px;
   vertical-align: middle;
-  margin-right: 6px;
+  margin-right: 8px;
+  filter: brightness(0);
 }
 
 /* Animations */
@@ -144,10 +136,7 @@ a:hover {
 }
 
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .delay-1 { animation-delay: 0.2s; }
@@ -201,24 +190,9 @@ a:hover {
 
 /* Mobile */
 @media (max-width: 480px) {
-  .card {
-    padding: 1.5rem;
-  }
-
-  .logo {
-    max-width: 160px;
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .bio {
-    font-size: 0.9rem;
-  }
+  .card { padding: 1.5rem; }
+  .logo { max-width: 160px; }
+  .profile-pic { width: 120px; height: 120px; }
+  h1 { font-size: 1.5rem; }
+  .bio { font-size: 0.9rem; }
 }
